@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html> 
+  
+  <head>
+    <title> Henrique Lima </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="buttons.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    
+  </head>
+
+
+  <body> 
+
+    <script>
+
+      let recruiterInfo = [];
+
+      function addRecruiterInfo(){
+
+        let textbox1 = document.getElementById('fname');
+        let textbox2 = document.getElementById('lname');
+        let textbox3 = document.getElementById('phone');
+        let textbox4 = document.getElementById('email');        
+        
+        recruiterInfo.push(textbox1.value);
+        recruiterInfo.push(textbox2.value);
+        recruiterInfo.push(textbox3.value);
+        recruiterInfo.push(textbox4.value);      
+
+        
+
+      }    
+
+      export const info = recruiterInfo;
+
+    </script>
+    
+    
+
+
+    <p class="header"> Henrique Lima </p>
+
+    <p class="comment"> Leave your contact info so I can reach out to you </p>
+  
+    <h1 class="paralign"> First Name </h1>
+    <input id="fname" type="text" class="textbox"/>
+    <h2 class="paralign"> Last Name </h2>
+    <input id="lname" type="text" class="textbox"/>
+    <h3 class="paralign"> Phone Numner</h3>
+    <input id="phone" type="text" class="textbox"/>
+    <h4 class="paralign">Email Address</h4>
+    <input id="email" type="text" class="textbox" />  
+    <p> </p>  
+
+    <button onclick = "addRecruiterInfo()" class="submit-button"> Submit </button>
+
+
+
+    
+    
+    
+    
+    
+  
+    <p class="textbox"> Social Media </p>
+  
+    <a href="https://www.facebook.com/henrique.medeiros.127" target="_blank" class="fa fa-facebook" ></a>
+  
+    <a href="https://www.linkedin.com/in/henrique-lima-b89b44152/" target="_blank" class="fa fa-linkedin"></a>
+  
+    <a href="https://www.instagram.com/neguete10/" target="_blank" class="fa fa-instagram"></a>
+
+  </body>
+
+</html>
