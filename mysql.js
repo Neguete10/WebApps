@@ -1,4 +1,5 @@
 var mysql = require('mysql');
+
 //import * as indexHtml from  './index.html'
 //let counter = 0;
 
@@ -23,3 +24,4 @@ console.log("1 record inserted");
 
 
 })
+

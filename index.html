@@ -6,41 +6,19 @@
     <title> Henrique Lima </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="buttons.css"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">      
+
+    <link rel="stylesheet" href="buttons.css">
+    
+    
+    <script type="module" src="command.js"></script>
+    <script type="module" src="mysql.js"></script>
 
     
   </head>
 
 
-  <body> 
-
-    <script>
-
-      let recruiterInfo = [];
-
-      function addRecruiterInfo(){
-
-        let textbox1 = document.getElementById('fname');
-        let textbox2 = document.getElementById('lname');
-        let textbox3 = document.getElementById('phone');
-        let textbox4 = document.getElementById('email');        
-        
-        recruiterInfo.push(textbox1.value);
-        recruiterInfo.push(textbox2.value);
-        recruiterInfo.push(textbox3.value);
-        recruiterInfo.push(textbox4.value);      
-
-        
-
-      }    
-
-      export const info = recruiterInfo;
-
-    </script>
+  <body>   
     
     
 
@@ -60,13 +38,7 @@
     <p> </p>  
 
     <button onclick = "addRecruiterInfo()" class="submit-button"> Submit </button>
-
-
-
-    
-    
-    
-    
+  
     
   
     <p class="textbox"> Social Media </p>
