@@ -7,7 +7,7 @@
 
 .submit-button{
 
-  margin-left: 9.5in;
+  margin-left: 7in;
   background-color: #007bb5;
   color: white;
   height: 40px;
@@ -40,13 +40,13 @@ border-radius: 10px;
 .fa-facebook {
 background: #3B5998;
 color: white;
-margin-left: 9in;
+margin-left: 5in;
 }
 
 .fa-linkedin {
 background: #007bb5;
 color: white;
-margin-left: 9in;
+margin-left: 7in;
 }
 
 .fa-instagram {
@@ -79,6 +79,12 @@ text-align: center;
 
 .textbox{
 
-  margin-left: 9in;
+  margin-left: 7in;
+
+}
+
+.top-section{
+
+  background-color: lightblue;
 
 }
