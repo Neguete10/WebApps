@@ -1,3 +1,7 @@
+"use strict";
+
+const switcher = document.querySelector(".submit-button");
+
 let recruiterInfo = [];
 
 function addRecruiterInfo() {
@@ -10,4 +14,6 @@ function addRecruiterInfo() {
   recruiterInfo.push(textbox2.value);
   recruiterInfo.push(textbox3.value);
   recruiterInfo.push(textbox4.value);
+
+  console.log(recruiterInfo);
 }

@@ -1,16 +1,16 @@
-var mysql = require("mysql");
+import { createConnection } from "mysql";
 
 //import * as indexHtml from  './index.html'
 //let counter = 0;
 
-var con = mysql.createConnection({
+var con = createConnection({
   host: "recruiters.cyoeeorjxg6q.us-east-2.rds.amazonaws.com",
   user: "admin",
   password: "mydatabase",
   database: "recruiters",
 });
 
-con.connect(function (err) {
+con.connect((err) => {
   if (err) throw err;
   console.log("Connected!");
 
