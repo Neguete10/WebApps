@@ -6,7 +6,7 @@ const app = express();
 app.listen(config.app.port);
 console.log(config.app.name);
 
-const switcher = document.querySelector(".submit-button");
+//const switcher = document.querySelector(".submit-button");
 
 let recruiterInfo = [];
 
