@@ -1,4 +1,4 @@
-"use strict";
+//"use strict";
 /*
 const express = require('express');
 const config = require('./config');
@@ -7,7 +7,7 @@ app.listen(config.app.port);
 console.log(config.app.name);
 */
 //const switcher = document.querySelector(".submit-button");
-
+/*
 let recruiterInfo = [];
 
 function addRecruiterInfo() {
@@ -23,6 +23,7 @@ function addRecruiterInfo() {
 
   console.log(recruiterInfo);
 }
+*/
 
 const http = require('http');
 
