@@ -1,18 +1,19 @@
-import { createConnection } from "mysql";
+var mysql = require('mysql');
 
-//import * as indexHtml from  './index.html'
-//let counter = 0;
-
-var con = createConnection({
-  host: "recruiters.cyoeeorjxg6q.us-east-2.rds.amazonaws.com",
-  user: "admin",
-  password: "mydatabase",
-  database: "recruiters",
+var connection = mysql.createConnection({
+  host     : process.env.recruiters.cyoeeorjxg6q.us-east-2.rds.amazonaws.com,
+  user     : process.env.admin,
+  password : process.env.mydatabase,
+  port     : process.env.3306
 });
 
-con.connect((err) => {
-  if (err) throw err;
-  console.log("Connected!");
+connection.connect(function(err) {
+  if (err) {
+    console.error('Database connection failed: ' + err.stack);
+    return;
+  }
+
+  console.log('Connected to database.');
 
   var sql =
     "INSERT INTO recruiters (recid, fname, lname, phone, email) VALUES ('2672498', 'Henrique', 'Lima', '937-919-4413', 'henriquemlima@hotmail.com')";
@@ -20,4 +21,7 @@ con.connect((err) => {
     if (err) throw err;
     console.log("1 record inserted");
   });
+
 });
+
+connection.end();
