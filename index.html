@@ -17,6 +17,24 @@
   </head>
 
   <body class="color">
+    <script>
+      let recruiterInfo = [];
+
+      function addRecruiterInfo() {
+        let textbox1 = document.getElementById("fname");
+        let textbox2 = document.getElementById("lname");
+        let textbox3 = document.getElementById("phone");
+        let textbox4 = document.getElementById("email");
+
+        recruiterInfo.push(textbox1.value);
+        recruiterInfo.push(textbox2.value);
+        recruiterInfo.push(textbox3.value);
+        recruiterInfo.push(textbox4.value);
+
+        console.log(recruiterInfo);
+      }
+    </script>
+
     <div class="top-section">
       <p class="header">Henrique Lima</p>
 
@@ -24,37 +42,43 @@
     </div>
 
     <h1 class="paralign">First Name</h1>
-    <input id="fname" type="text" class="textbox" />
+    <input id="fname" type="text" class="paralign" />
     <h2 class="paralign">Last Name</h2>
-    <input id="lname" type="text" class="textbox" />
+    <input id="lname" type="text" class="paralign" />
     <h3 class="paralign">Phone Numner</h3>
-    <input id="phone" type="text" class="textbox" />
+    <input id="phone" type="text" class="paralign" />
     <h4 class="paralign">Email Address</h4>
-    <input id="email" type="text" class="textbox" />
+    <input id="email" type="text" class="paralign" />
     <p></p>
 
     <button onclick="addRecruiterInfo()" class="submit-button">Submit</button>
 
-    <p class="textbox">Social Media</p>
+    <p class="paralign">Social Media</p>
 
     <nav>
-      <a
-        href="https://www.facebook.com/henrique.medeiros.127"
-        target="_blank"
-        class="fa fa-facebook"
-      ></a>
+      <div style="text-align: center">
+        <a
+          href="https://www.facebook.com/henrique.medeiros.127"
+          target="_blank"
+          class="fa fa-facebook"
+        ></a>
+      </div>
 
-      <a
-        href="https://www.linkedin.com/in/henrique-lima-b89b44152/"
-        target="_blank"
-        class="fa fa-linkedin"
-      ></a>
+      <div style="text-align: center">
+        <a
+          href="https://www.linkedin.com/in/henrique-lima-b89b44152/"
+          target="_blank"
+          class="fa fa-linkedin"
+        ></a>
+      </div>
 
-      <a
-        href="https://www.instagram.com/neguete10/"
-        target="_blank"
-        class="fa fa-instagram"
-      ></a>
+      <div style="text-align: center">
+        <a
+          href="https://www.instagram.com/neguete10/"
+          target="_blank"
+          class="fa fa-instagram"
+        ></a>
+      </div>
     </nav>
   </body>
 </html>
